@@ -15,7 +15,7 @@ resource "aws_cognito_user_pool" "demo_cognito_pool" {
   email_configuration {
     email_sending_account = "COGNITO_DEFAULT"
   }
-
+  auto_verified_attributes = ["email"]
   email_verification_message = "Your verification code is {####}"
   email_verification_subject = "Verification Code"
 

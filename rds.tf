@@ -22,9 +22,9 @@ resource "aws_db_instance" "database_demo" {
   apply_immediately                   = true
   iam_database_authentication_enabled = true
   publicly_accessible                 = false
-  performance_insights_enabled        = true
-  iops =  1000
-  storage_type = "io1"
+  /*  performance_insights_enabled        = true */
+  /* iops =  1000*/
+  /* storage_type = "io1" */
   vpc_security_group_ids = ["${aws_security_group.database_security_group.id}"]
 
 }

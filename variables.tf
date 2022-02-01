@@ -94,7 +94,7 @@ variable "container_desired_count"{
 }
 
 variable "ecs_task_policy"{
-  default = ["arn:aws:iam::aws:policy/SecretsManagerReadWrite", "arn:aws:iam::aws:policy/AmazonRDSDataFullAccess"]
+  default = ["arn:aws:iam::aws:policy/SecretsManagerReadWrite", "arn:aws:iam::aws:policy/AmazonRDSDataFullAccess", "arn:aws:iam::aws:policy/AmazonCognitoPowerUser"]
   description = "List of policy that needs to be attached"
   type = list(string)
 }
